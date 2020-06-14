@@ -83,22 +83,28 @@ th:not([align]) {
   text-align: left;
 }
 
-body {
-  font-family: "MuseoModerno", cursive;
+body div.ex:nth-child(even) {
+  background-color: #f3f3f3;
 }
 
-.ex01 {
-  background-color: rgba(204, 204, 204, 0.5);
+body div.ex:nth-child(odd) {
+  background-color: #fdfdfd;
+}
+
+.ex {
   padding: 40px 0;
 }
-.ex01 h2 {
+.ex .number-title {
   text-align: center;
   font-size: 3rem;
   font-weight: 300;
+  margin-bottom: 2rem;
+  font-family: "MuseoModerno", cursive;
 }
-.ex01 img {
+.ex img {
   width: 100%;
 }
+
 .ex01 .integration {
   background-color: #f8f3e9;
   font-family: "Roboto", sans-serif;
@@ -122,6 +128,37 @@ body {
 }
 .ex01 .integration li {
   margin: 0 10px;
+}
+
+.ex02 {
+  font-family: "Roboto", sans-serif;
+}
+.ex02 .integration {
+  background-color: white;
+}
+.ex02 .integration ul {
+  display: flex;
+  padding: 5vh 0;
+}
+.ex02 .integration ul li h1 {
+  color: #87c39c;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 4vw 0 2vh 4vw;
+}
+.ex02 .integration ul li p {
+  color: #505050;
+  font-size: 1.3rem;
+  margin-left: 4vw;
+}
+.ex02 .integration ul li img {
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 15vw;
+}
+.ex02 .integration ul:last-child {
+  margin-right: 3vw;
 }
 
 /*# sourceMappingURL=style.css.map */
